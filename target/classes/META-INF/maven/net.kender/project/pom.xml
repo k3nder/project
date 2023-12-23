@@ -5,8 +5,15 @@
 
 	<groupId>net.kender</groupId>
 	<artifactId>project</artifactId>
-	<version>1.0</version>
+	<version>1.2.0</version>
 	<packaging>jar</packaging>
+
+	<developers>
+		<developer>
+			<name>kristian</name>
+			<email>kristianzvezdakris@gmail.com</email>
+		</developer>
+	</developers>
 
 	<name>project</name>
 	<url>http://maven.apache.org</url>
@@ -15,12 +22,45 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
+
 	<dependencies>
+		<!--
+		https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations -->
 		<dependency>
-			<groupId>net.kristian</groupId>
-			<artifactId>java-utils</artifactId>
-			<version>1.0.0</version>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>2.16.0</version>
 		</dependency>
+		<dependency>
+			<groupId>io.github.k3nder</groupId>
+			<artifactId>kutils</artifactId>
+			<version>0.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>io.github.k3nder</groupId>
+			<artifactId>runner</artifactId>
+			<version>1.2.0</version>
+		</dependency>
+		<dependency>
+			<groupId>io.github.k3nder</groupId>
+			<artifactId>log5k</artifactId>
+			<version>1.2.0</version>
+		</dependency>
+		<!--
+		https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>2.16.0</version>
+		</dependency>
+		<!--
+		https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.16.0</version>
+		</dependency>
+
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
